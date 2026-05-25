@@ -1,25 +1,23 @@
 # Bomb Escape
 
-Et rutenett-basert overlevelsesspill i terminalen — løp fra fienden, samle mynter og bryt gjennom hindringer med granater og bomber. Skrevet i Python.
+Grid-based terminal survival game. Outrun the enemy, grab coins, blow up obstacles.
 
-![Skjermbilde](screenshot.png)
+![Screenshot](screenshot.png)
 
-## Om prosjektet
+First-year university project (UiO, Informatics).
 
-Skrevet i 1. klasse på informatikk ved Universitetet i Oslo som en oppfølger til [Terminal Pokémon](https://github.com/ffremming/terminal-pokemon). Jeg ønsket å eksperimentere mer med kobling mellom celler (naboliste), en enkel fiende-AI som jakter på spilleren, og rekursive eksplosjoner.
-
-## Hva den gjør
-
-- Et rutenett med spiller, fiende, mynter og hindringer (genereres tilfeldig rundt "ankere")
-- Fienden beveger seg mot spilleren — spillet er over hvis den når deg
-- Samle mynter for poeng
-- Bruk granater (`g`) for å sprenge en celle i retning du beveger deg, eller en bombe (`b`) for å sprenge cellene rundt deg
-- Kommandoer: `o`/`n`/`h`/`v` for retning, `g` for granat, `b` for bombe, enter for å bevege
-
-## Kjøring
+## Run
 
 ```bash
-python brett.py
+pip install colorama
+python main.py
 ```
 
-Ingen eksterne avhengigheter — bare standard Python 3.
+## Controls
+
+| Key | Action |
+|-----|--------|
+| `o` `n` `h` `v` | face up / down / right / left |
+| enter | move in faced direction |
+| `g` | throw grenade |
+| `b` | drop bomb |
